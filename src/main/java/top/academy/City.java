@@ -2,32 +2,32 @@ package top.academy;
 
 import java.util.Scanner;
 
-public class City {
-    private String cityName;
-    private String discription;
+public class State {
+    private String capitalName;
+    private String stateName;
     private int cityNumber;
     private int population;
-    public String getCityName() {
-        return cityName;
+    public String getStateName() {
+        return capitalName;
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public void setStateName(String capitalName) {
+        this.capitalName = capitalName;
     }
 
     public String getDiscription() {
-        return discription;
+        return stateName;
     }
 
-    public void setDiscription(String discription) {
-        this.discription = discription;
+    public void setDiscription(String stateName) {
+        this.stateName = stateName;
     }
 
-    public int getCityNumber() {
+    public int getStateNumber() {
         return cityNumber;
     }
 
-    public void setCityNumber(int cityNumber) {
+    public void setStateNumber(int cityNumber) {
         this.cityNumber = cityNumber;
     }
 
@@ -39,28 +39,28 @@ public class City {
         this.population = population;
     }
 
-    City() {
+    State() {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите имя");
-        this.cityName = input.next();
+        this.capitalName = input.next();
         System.out.println("Введите фамилию");
-        this.discription = input.next();
+        this.stateName = input.next();
         System.out.println("Введите пол");
         this.cityNumber = input.nextInt();
         System.out.println("Введите возраст");
         this.population = input.nextInt();
     }
 
-    City(String cityName, String discription) {
-        this.cityName = cityName;
-        this.discription = discription;
+    State(String capitalName, String stateName) {
+        this.capitalName = capitalName;
+        this.stateName = stateName;
         this.cityNumber = 0;
         this.population = 0;
     }
 
-    City(String cityName, String discription, int cityNumber, int population) {
-        this.cityName = cityName;
-        this.discription = discription;
+    State(String capitalName, String stateName, int cityNumber, int population) {
+        this.capitalName = capitalName;
+        this.stateName = stateName;
         this.cityNumber = cityNumber;
         this.population = population;
     }
@@ -69,9 +69,9 @@ public class City {
     public void changeInfo() {
         Scanner input = new Scanner(System.in);
         System.out.println("Введите название города");
-        this.cityName = input.next();
+        this.capitalName = input.next();
         System.out.println("Введите описание города");
-        this.discription = input.next();
+        this.stateName = input.next();
         System.out.println("Введите номер города");
         this.cityNumber = input.nextInt();
         System.out.println("Введите население");
@@ -79,20 +79,20 @@ public class City {
     }
 
 
-    public void changeInfo(String cityName, String discription) {
-        setCityName(cityName);
-        setDiscription(discription);
+    public void changeInfo(String capitalName, String stateName) {
+        setStateName(capitalName);
+        setDiscription(stateName);
     }
 
-    public void changeInfo(String cityName, String discription, int cityNumber, int population) {
-        setCityName(cityName);
-        setDiscription(discription);
-        setCityNumber(cityNumber);
+    public void changeInfo(String capitalName, String stateName, int cityNumber, int population) {
+        setStateName(capitalName);
+        setDiscription(stateName);
+        setStateNumber(cityNumber);
         setPopulation(population);
     }
 
     public void showInfo() {
-        System.out.println("Город : " + getCityName() + "\nИндекс № " + getCityNumber());
+        System.out.println("Город : " + getStateName() + "\nИндекс № " + getStateNumber());
         System.out.println("Население : " + getPopulation()+"чел");
         System.out.println("Описание: " + getDiscription() + "\n");
     }
