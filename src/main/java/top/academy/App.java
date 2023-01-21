@@ -6,10 +6,12 @@ package top.academy;
 public class App {
     public static void main(String[] args) {
 
-       Book book = new Book("Дюна", "Френк Герберт","Фантастика",650);
+       Automobiles book = new Automobiles("Нива-3", "JACтоваз",2022,2);
 
        book.showInfo();
-       book.setPages(750);
+       book.setEngineVolume(2.5F);
+       book.showInfo();
+       book.changeInfo("Truck-SX", "Tesla",2023 ,0);
        book.showInfo();
        book.changeInfo();
        book.showInfo();
