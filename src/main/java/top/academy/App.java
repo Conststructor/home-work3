@@ -6,10 +6,10 @@ package top.academy;
 public class App {
     public static void main(String[] args) {
 
-        State city = new State("CCCP", "Москва", 22402200 , 293047571);
+        Fraction city = new Fraction(16 , 2);
 
         city.showInfo();
-        city.changeInfo("Россия", "Москва", 17125191, 147182123);
+        city.changeInfo(40, 5);
         city.showInfo();
         city.changeInfo();
         city.showInfo();
