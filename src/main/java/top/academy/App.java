@@ -6,12 +6,15 @@ package top.academy;
 public class App {
     public static void main(String[] args) {
 
-        Human h1 = new Human("John", "Doe", "male", 88);
+        City city = new City("Тюмень", "1-й город в Сибири. Тюмень расположена на юге Западной Сибири," +
+                "\n в азиатской части России, на обоих берегах реки Туры", 72, 847488);
 
-        h1.showInfo();
-        h1.changeInfo("Иван", "Иванов", "мужской", 88);
-        h1.showInfo();
-        h1.changeInfo();
-        h1.showInfo();
+        city.showInfo();
+        city.changeInfo("Екатеринбург", " мегаполис в России, административный центр Уральского " +
+                "\nфедерального округа и Свердловской области. Екатеринбург находится в Азиатской территории России, " +
+                "\nвблизи её границы с Европой, в 1667 км к востоку от Москвы.", 66, 1544376);
+        city.showInfo();
+        city.changeInfo();
+        city.showInfo();
     }
 }
